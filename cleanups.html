@@ -53,6 +53,24 @@
 
     <!-- Cleanups Calendar (Member: Derrick Sankara) -->
     <h2 class="sub-title">1. Upcoming Parish Cleanups Calendar</h2>
+
+    <div id="rsvp-kalerwe" class="confirm-box" role="status">
+      <p><strong>Demo Confirmation:</strong> You are registered as a volunteer for the <strong>Kalerwe Parish</strong> cleanup (Sat, 28 Nov 2026, 8:00 AM).</p>
+      <a href="#main" class="btn btn-outline btn-small">Dismiss</a>
+    </div>
+    <div id="rsvp-katwe" class="confirm-box" role="status">
+      <p><strong>Demo Confirmation:</strong> You are registered as a volunteer for the <strong>Katwe I Parish</strong> cleanup (Sat, 5 Dec 2026, 8:00 AM).</p>
+      <a href="#main" class="btn btn-outline btn-small">Dismiss</a>
+    </div>
+    <div id="rsvp-busega" class="confirm-box" role="status">
+      <p><strong>Demo Confirmation:</strong> You are registered as a volunteer for the <strong>Busega Parish</strong> cleanup (Sat, 12 Dec 2026, 8:00 AM).</p>
+      <a href="#main" class="btn btn-outline btn-small">Dismiss</a>
+    </div>
+    <div id="rsvp-nakasero" class="confirm-box" role="status">
+      <p><strong>Demo Confirmation:</strong> You are registered as a volunteer for the <strong>Nakasero Parish</strong> cleanup (Sat, 19 Dec 2026, 8:00 AM).</p>
+      <a href="#main" class="btn btn-outline btn-small">Dismiss</a>
+    </div>
+
     <div class="table-wrap">
     <table class="data-table">
       <thead>
@@ -70,28 +88,28 @@
           <td>Kawempe &bull; Kalerwe Parish</td>
           <td>Kalerwe Market LC1 Office</td>
           <td>Unclogging roadside drainage culverts</td>
-          <td><button type="button" class="btn btn-primary btn-small" onclick="alert('Demo only: you are registered as a volunteer for the Kalerwe cleanup!');">Join as Volunteer</button></td>
+          <td><a href="#rsvp-kalerwe" class="btn btn-primary btn-small">Join as Volunteer</a></td>
         </tr>
         <tr>
           <td><strong>Sat, 5 Dec 2026</strong> (8:00 AM)</td>
           <td>Makindye &bull; Katwe I Parish</td>
           <td>Katwe Community Center</td>
           <td>Removing plastic waste along railway berm</td>
-          <td><button type="button" class="btn btn-primary btn-small" onclick="alert('Demo only: you are registered as a volunteer for the Katwe cleanup!');">Join as Volunteer</button></td>
+          <td><a href="#rsvp-katwe" class="btn btn-primary btn-small">Join as Volunteer</a></td>
         </tr>
         <tr>
           <td><strong>Sat, 12 Dec 2026</strong> (8:00 AM)</td>
           <td>Rubaga &bull; Busega Parish</td>
           <td>Busega Roundabout Park</td>
           <td>Clearing a secondary drain</td>
-          <td><button type="button" class="btn btn-primary btn-small" onclick="alert('Demo only: you are registered as a volunteer for the Busega cleanup!');">Join as Volunteer</button></td>
+          <td><a href="#rsvp-busega" class="btn btn-primary btn-small">Join as Volunteer</a></td>
         </tr>
         <tr>
           <td><strong>Sat, 19 Dec 2026</strong> (8:00 AM)</td>
           <td>Central &bull; Nakasero Parish</td>
           <td>Nakasero Market LC1 Office</td>
           <td>Removing illegal dumpsites along drainage channels</td>
-          <td><button type="button" class="btn btn-primary btn-small" onclick="alert('Demo only: you are registered as a volunteer for the Nakasero cleanup!');">Join as Volunteer</button></td>
+          <td><a href="#rsvp-nakasero" class="btn btn-primary btn-small">Join as Volunteer</a></td>
         </tr>
       </tbody>
     </table>
@@ -102,7 +120,12 @@
       <h2 class="sub-title">2. Local Council (LC1) Tool Bank Loan Request</h2>
       <p class="table-intro">Local council leaders and youth groups can request cleaning gear for a cleanup:</p>
 
-      <form action="#" method="post" onsubmit="alert('Demo only: tool loan request submitted. A depot would contact the LC1 Chairman within 24 hours.'); return false;">
+      <div id="tool-loan-sent" class="confirm-box" role="status">
+        <p><strong>Demo Confirmation:</strong> Tool loan request submitted. A depot would contact the LC1 Chairperson within 24 hours. (Coursework demo: no data is sent or stored.)</p>
+        <a href="#main" class="btn btn-outline btn-small">Dismiss</a>
+      </div>
+
+      <form action="#tool-loan-sent" method="get">
         <div class="form-group">
           <label for="org_name">LC1 Zone / Youth Group Name *</label>
           <input type="text" id="org_name" name="org_name" class="form-control" placeholder="e.g., Bwaise II Youth Environmental Association" required>
@@ -138,12 +161,12 @@
   <footer>
     <div class="footer-container">
       <div class="footer-col">
-        <h4>About Kampala CleanConnect</h4>
+        <h2>About Kampala CleanConnect</h2>
         <p>A student-built portal responding to Greater Kampala's waste problem after the Kiteezi landfill collapse. Built for Victoria University Coursework Project 2.</p>
         <p class="footer-note"><strong>Demo notice:</strong> this site has no live hotline. Listings, numbers and figures are sample data. For real sanitation issues, contact KCCA through kcca.go.ug.</p>
       </div>
       <div class="footer-col">
-        <h4>Quick Links</h4>
+        <h2>Quick Links</h2>
         <ul>
           <li><a href="index.html">Home Portal</a></li>
           <li><a href="report.html">Report Illegal Dumpsite</a></li>
@@ -155,7 +178,7 @@
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Academic Project Notice</h4>
+        <h2>Academic Project Notice</h2>
         <p>Victoria University Kampala</p>
         <p>Faculty of Science &amp; Technology</p>
         <p>Module: Internet Technology &amp; Web Design</p>
