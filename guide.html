@@ -55,32 +55,48 @@
     <!-- Waste Sorting Cards (Member 8: Peter Nyakoojo Kyle) -->
     <h2 class="sub-title">1. The 4 Household Waste Streams</h2>
     <div class="card-grid">
-      <div class="info-card organic">
-        <span class="badge">Stream 1 &bull; Organic</span>
-        <h3>Organic Kitchen Waste</h3>
-        <p><strong>What it is:</strong> Matooke peelings, cassava and sweet potato skins, leftover food, and vegetable scraps.</p>
-        <p class="card-tip"><strong>Disposal Tip:</strong> Do not bag in plastic. Turn into garden compost or use it as animal feed where suitable.</p>
+      <div class="info-card stream-card organic">
+        <div class="stream-media">
+          <img src="assets/organic_waste.webp" alt="Pile of organic kitchen scraps, vegetable peelings, and garden compost">
+        </div>
+        <div class="stream-body">
+          <h3>Organic Kitchen Waste</h3>
+          <p><strong>What it is:</strong> Matooke peelings, cassava and sweet potato skins, leftover food, and vegetable scraps.</p>
+          <p class="card-tip"><strong>Disposal Tip:</strong> Do not bag in plastic. Turn into garden compost or use it as animal feed where suitable.</p>
+        </div>
       </div>
 
-      <div class="info-card plastic">
-        <span class="badge">Stream 2 &bull; Recyclable</span>
-        <h3>Rigid Plastics (PET &amp; HDPE)</h3>
-        <p><strong>What it is:</strong> Drinking water bottles, soda bottles, cooking oil jerrycans, and plastic buckets.</p>
-        <p class="card-tip"><strong>Disposal Tip:</strong> Rinse, crush flat, and take to a plastic buy-back point (see the directory). Prices vary, so ask first.</p>
+      <div class="info-card stream-card plastic">
+        <div class="stream-media">
+          <img src="assets/plastic_waste.webp" alt="Sorted stack of rigid PET drinking water and soda plastic bottles for recycling">
+        </div>
+        <div class="stream-body">
+          <h3>Rigid Plastics (PET &amp; HDPE)</h3>
+          <p><strong>What it is:</strong> Drinking water bottles, soda bottles, cooking oil jerrycans, and plastic buckets.</p>
+          <p class="card-tip"><strong>Disposal Tip:</strong> Rinse, crush flat, and take to a plastic buy-back point (see the directory). Prices vary, so ask first.</p>
+        </div>
       </div>
 
-      <div class="info-card kavera">
-        <span class="badge">Stream 3 &bull; Flood Hazard</span>
-        <h3>Polythene Bags (Kavera)</h3>
-        <p><strong>What it is:</strong> Single-use plastic shopping bags, packaging wrappers, and bread bags.</p>
-        <p class="card-tip"><strong>Disposal Tip:</strong> Bundle clean bags together. Never dump into roadside drainage channels!</p>
+      <div class="info-card stream-card kavera">
+        <div class="stream-media">
+          <img src="assets/polyethene.webp" alt="Bundle of single-use polythene shopping bags known locally as kavera">
+        </div>
+        <div class="stream-body">
+          <h3>Polythene Bags (Kavera)</h3>
+          <p><strong>What it is:</strong> Single-use plastic shopping bags, packaging wrappers, and bread bags.</p>
+          <p class="card-tip"><strong>Disposal Tip:</strong> Bundle clean bags together. Never dump into roadside drainage channels!</p>
+        </div>
       </div>
 
-      <div class="info-card toxic">
-        <span class="badge">Stream 4 &bull; Hazardous</span>
-        <h3>Batteries &amp; E-Waste</h3>
-        <p><strong>What it is:</strong> Dry cell torch batteries, fluorescent tubes, phone chargers, and medical syringes.</p>
-        <p class="card-tip"><strong>Disposal Tip:</strong> Keep separate from general trash and ask your division health office about safe drop-off.</p>
+      <div class="info-card stream-card toxic">
+        <div class="stream-media">
+          <img src="assets/e_waste.jpg" alt="Discarded electronic waste including circuit boards, batteries, and cables">
+        </div>
+        <div class="stream-body">
+          <h3>Batteries &amp; E-Waste</h3>
+          <p><strong>What it is:</strong> Dry cell torch batteries, fluorescent tubes, phone chargers, and medical syringes.</p>
+          <p class="card-tip"><strong>Disposal Tip:</strong> Keep separate from general trash and ask your division health office about safe drop-off.</p>
+        </div>
       </div>
     </div>
 
@@ -97,10 +113,13 @@
 
       <!-- Luganda Translation Box (Bilingual Inclusion) -->
       <div class="luganda-box">
-        <h3>Okulondamu Kasasiro mu Luganda (Summary in Oluganda)</h3>
-        <p lang="lg">
-          <strong>Okulondamu Kasasiro:</strong> Yawula ebikuta by’amatooke n’ebyokulya eby’okuvunda obiteeke mu kinaabiro oba bikozese ng’ebigimusa. Obuveera n’obucupa bw’amazzi tebikasukibwa mu myala gy’amazzi; biweereze mu bifo ebigula ebyuma ebikadde n’amacupa ga pulasitiki okukuuma Kampala nga muyonjo.
-        </p>
+        <div class="luganda-text">
+          <h3>Okulondamu Kasasiro mu Luganda (Summary in Luganda)</h3>
+          <p lang="lg">
+            <strong>Okulondamu Kasasiro:</strong> Yawula ebikuta by’amatooke n’ebyokulya eby’okuvunda obiteeke mu kasasiro oba bikozese ng’ebigimusa. Obuveera n’obucupa bw’amazzi tebikasukibwa mu myala gy’amazzi; biweereze mu bifo ebigula ebyuma ebikadde n’amacupa ga pulasitiki okukuuma Kampala nga muyonjo.
+          </p>
+        </div>
+        <a href="assets/sorting-guide.pdf" download="Kampala-CleanConnect-Sorting-Guide.pdf" class="btn btn-primary luganda-btn">Download Sorting Guide (PDF)</a>
       </div>
     </section>
   </main>
@@ -110,8 +129,8 @@
     <div class="footer-container">
       <div class="footer-col">
         <h2>About Kampala CleanConnect</h2>
-        <p>A student-built portal responding to Greater Kampala's waste problem after the Kiteezi landfill collapse. Built for Victoria University Coursework Project 2.</p>
-        <p class="footer-note"><strong>Demo notice:</strong> this site has no live hotline. Listings, numbers and figures are sample data. For real sanitation issues, contact KCCA through kcca.go.ug.</p>
+        <p>A Coursework Project built responding to Greater Kampala's waste problem after the Kiteezi landfill collapse.</p>
+        <p class="footer-note"><strong>Disclaimer:</strong> This site has no live hotline. Listings, numbers and figures are sample data. For real sanitation issues, contact KCCA through <a href="https://www.kcca.go.ug" target="_blank" rel="noopener noreferrer">kcca.go.ug</a>.</p>
       </div>
       <div class="footer-col">
         <h2>Quick Links</h2>
@@ -131,11 +150,15 @@
         <p>Faculty of Science &amp; Technology</p>
         <p>Module: Internet Technology &amp; Web Design</p>
         <p>Facilitator: Olivia Najjemba</p>
-        <p>Group 12 (Lead: Stephen Asiimwe)</p>
+        <p>Group 20</p>
       </div>
     </div>
     <div class="footer-bottom">
-      &copy; 2026 Kampala CleanConnect &bull; Victoria University Group Project 2 &bull; Hosted on GitHub Pages
+      <div class="footer-bottom-inner">
+        <span>&copy; 2026 Kampala CleanConnect</span>
+        <span>Victoria University Group Project</span>
+        <span>Hosted on GitHub Pages</span>
+      </div>
     </div>
   </footer>
 
