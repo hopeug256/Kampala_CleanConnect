@@ -64,16 +64,33 @@
           <legend>1. Incident Location</legend>
 
           <div class="form-group">
-            <label for="division">Select Municipality / Division *</label>
-            <select id="division" name="division" class="form-control" required>
-              <option value="">-- Choose Division --</option>
-              <option value="kawempe">Kawempe Division</option>
-              <option value="makindye">Makindye Division</option>
-              <option value="rubaga">Rubaga Division</option>
-              <option value="nakawa">Nakawa Division</option>
-              <option value="central">Kampala Central Division</option>
-              <option value="kasangati">Kasangati Town Council (Wakiso)</option>
-            </select>
+            <span class="field-label">Select Municipality / Division *</span>
+            <div class="division-grid">
+              <div class="division-option">
+                <input type="checkbox" id="div-kawempe" name="division" value="kawempe" class="division-check">
+                <label for="div-kawempe" class="division-label">Kawempe Division</label>
+              </div>
+              <div class="division-option">
+                <input type="checkbox" id="div-makindye" name="division" value="makindye" class="division-check">
+                <label for="div-makindye" class="division-label">Makindye Division</label>
+              </div>
+              <div class="division-option">
+                <input type="checkbox" id="div-rubaga" name="division" value="rubaga" class="division-check">
+                <label for="div-rubaga" class="division-label">Rubaga Division</label>
+              </div>
+              <div class="division-option">
+                <input type="checkbox" id="div-nakawa" name="division" value="nakawa" class="division-check">
+                <label for="div-nakawa" class="division-label">Nakawa Division</label>
+              </div>
+              <div class="division-option">
+                <input type="checkbox" id="div-central" name="division" value="central" class="division-check">
+                <label for="div-central" class="division-label">Kampala Central Division</label>
+              </div>
+              <div class="division-option">
+                <input type="checkbox" id="div-kasangati" name="division" value="kasangati" class="division-check">
+                <label for="div-kasangati" class="division-label">Kasangati Town Council (Wakiso)</label>
+              </div>
+            </div>
           </div>
 
           <div class="form-group">
