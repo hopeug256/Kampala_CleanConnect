@@ -53,89 +53,73 @@
 
     <p class="data-notice"><strong>Disclaimer:</strong> Company names, phone numbers, rates and prices on this page are illustrative placeholders made for the coursework demo. They are not real KCCA records. Confirm real collectors and fees with KCCA.</p>
 
-    <!-- Pure-CSS Division Filter (Member 5: Sherura Samuel) -->
-    <div class="collector-filter-wrap">
-      <input type="radio" name="div-filter" id="filter-all" class="filter-radio" checked>
-      <input type="radio" name="div-filter" id="filter-kawempe" class="filter-radio">
-      <input type="radio" name="div-filter" id="filter-makindye" class="filter-radio">
-      <input type="radio" name="div-filter" id="filter-rubaga" class="filter-radio">
-      <input type="radio" name="div-filter" id="filter-nakawa" class="filter-radio">
-      <input type="radio" name="div-filter" id="filter-central" class="filter-radio">
-      <input type="radio" name="div-filter" id="filter-kasangati" class="filter-radio">
+    <!-- Search & Filter Bar (Member 5: Sherura Samuel) -->
+    <div class="filter-bar">
+      <label for="filter-div">Filter by Division:</label>
+      <select id="filter-div" class="form-control">
+        <option value="all">All Divisions</option>
+        <option value="kawempe">Kawempe Division</option>
+        <option value="makindye">Makindye Division</option>
+        <option value="rubaga">Rubaga Division</option>
+        <option value="nakawa">Nakawa Division</option>
+        <option value="central">Central Division</option>
+        <option value="kasangati">Kasangati Town Council</option>
+      </select>
+      <button type="button" class="btn btn-primary">Filter Results</button>
+    </div>
+    <p id="filter-msg" class="filter-msg">Showing all collectors (static HTML/CSS demo).</p>
 
-      <div class="filter-bar" role="group" aria-label="Filter collectors by division">
-        <span class="filter-title">Filter by Division:</span>
-        <label for="filter-all" class="filter-pill">All Divisions</label>
-        <label for="filter-kawempe" class="filter-pill">Kawempe</label>
-        <label for="filter-makindye" class="filter-pill">Makindye</label>
-        <label for="filter-rubaga" class="filter-pill">Rubaga</label>
-        <label for="filter-nakawa" class="filter-pill">Nakawa</label>
-        <label for="filter-central" class="filter-pill">Central</label>
-        <label for="filter-kasangati" class="filter-pill">Kasangati</label>
-      </div>
-
-      <p class="filter-msg">
-        <span class="msg-all">Showing all 5 sample collectors across Greater Kampala.</span>
-        <span class="msg-kawempe">Showing sample collectors in Kawempe Division (1).</span>
-        <span class="msg-makindye">Showing sample collectors in Makindye Division (1).</span>
-        <span class="msg-rubaga">Showing sample collectors in Rubaga Division (1).</span>
-        <span class="msg-nakawa">Showing sample collectors in Nakawa Division (1).</span>
-        <span class="msg-central">Showing sample collectors in Central Division (1).</span>
-        <span class="msg-kasangati">Showing sample collectors in Kasangati Town Council (1).</span>
-      </p>
-
-      <!-- Collectors Table (Member 6: Nassiwa Gloria) -->
-      <h2 class="sub-title">1. Waste Collectors Directory (Sample)</h2>
-      <div class="table-wrap">
-      <table class="data-table" id="haulers-table">
-        <thead>
-          <tr>
-            <th>Company Name</th>
-            <th>Operating Division</th>
-            <th>Weekly Collection Days</th>
-            <th>Contact Number</th>
-            <th>Customer Type</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr data-division="central rubaga">
-            <td><strong>Central-Rubaga Clean Haulers</strong></td>
-            <td>Kampala Central &amp; Rubaga</td>
-            <td>Mondays &amp; Thursdays</td>
-            <td><a href="tel:+256700000101">+256 700 000 101</a></td>
-            <td>Households &amp; shops</td>
-          </tr>
-          <tr data-division="makindye">
-            <td><strong>Makindye Kleen Services</strong></td>
-            <td>Makindye Division</td>
-            <td>Tuesdays &amp; Fridays</td>
-            <td><a href="tel:+256700000102">+256 700 000 102</a></td>
-            <td>Households</td>
-          </tr>
-          <tr data-division="kawempe">
-            <td><strong>Kalerwe Green Sanitation</strong></td>
-            <td>Kawempe Division (Kalerwe, Bwaise)</td>
-            <td>Wednesdays &amp; Saturdays</td>
-            <td><a href="tel:+256700000103">+256 700 000 103</a></td>
-            <td>Households &amp; market stalls</td>
-          </tr>
-          <tr data-division="nakawa">
-            <td><strong>Nakawa Kasasiro Express</strong></td>
-            <td>Nakawa Division (Ntinda, Kyambogo)</td>
-            <td>Mondays &amp; Fridays</td>
-            <td><a href="tel:+256700000104">+256 700 000 104</a></td>
-            <td>Households &amp; shops</td>
-          </tr>
-          <tr data-division="kasangati">
-            <td><strong>Kasangati Waste Services</strong></td>
-            <td>Kasangati Town Council &amp; Wakiso</td>
-            <td>Tuesdays &amp; Saturdays</td>
-            <td><a href="tel:+256700000105">+256 700 000 105</a></td>
-            <td>Households</td>
-          </tr>
-        </tbody>
-      </table>
-      </div>
+    <!-- Collectors Table (Member 6: Nassiwa Gloria) -->
+    <h2 class="sub-title">1. Waste Collectors Directory (Sample)</h2>
+    <div class="table-wrap">
+    <table class="data-table" id="haulers-table">
+      <thead>
+        <tr>
+          <th>Company Name</th>
+          <th>Operating Division</th>
+          <th>Weekly Collection Days</th>
+          <th>Contact Number</th>
+          <th>Customer Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-division="central rubaga">
+          <td><strong>Central-Rubaga Clean Haulers</strong></td>
+          <td>Kampala Central &amp; Rubaga</td>
+          <td>Mondays &amp; Thursdays</td>
+          <td><a href="tel:+256700000101">+256 700 000 101</a></td>
+          <td>Households &amp; shops</td>
+        </tr>
+        <tr data-division="makindye">
+          <td><strong>Makindye Kleen Services</strong></td>
+          <td>Makindye Division</td>
+          <td>Tuesdays &amp; Fridays</td>
+          <td><a href="tel:+256700000102">+256 700 000 102</a></td>
+          <td>Households</td>
+        </tr>
+        <tr data-division="kawempe">
+          <td><strong>Kalerwe Green Sanitation</strong></td>
+          <td>Kawempe Division (Kalerwe, Bwaise)</td>
+          <td>Wednesdays &amp; Saturdays</td>
+          <td><a href="tel:+256700000103">+256 700 000 103</a></td>
+          <td>Households &amp; market stalls</td>
+        </tr>
+        <tr data-division="nakawa">
+          <td><strong>Nakawa Kasasiro Express</strong></td>
+          <td>Nakawa Division (Ntinda, Kyambogo)</td>
+          <td>Mondays &amp; Fridays</td>
+          <td><a href="tel:+256700000104">+256 700 000 104</a></td>
+          <td>Households &amp; shops</td>
+        </tr>
+        <tr data-division="kasangati">
+          <td><strong>Kasangati Waste Services</strong></td>
+          <td>Kasangati Town Council &amp; Wakiso</td>
+          <td>Tuesdays &amp; Saturdays</td>
+          <td><a href="tel:+256700000105">+256 700 000 105</a></td>
+          <td>Households</td>
+        </tr>
+      </tbody>
+    </table>
     </div>
 
     <!-- Tariff Matrix (Member 7: Katusiime Allen) -->
